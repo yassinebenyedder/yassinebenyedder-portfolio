@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header {
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(73, 73, 182);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: rgb(79, 79, 202);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 30px;
+    display: inline-block;
+    transition: 0.35s ease;
+}
+
+.navigation a:hover {
+    color: rgb(55, 19, 118);
+    transform: scale(1.1);
+}
+
+.main{
+    padding-left: 55px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(img/1.png) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: aliceblue;
+    font-size: 1.6em;
+    font-weight: 500;
+    cursor: default;
+}
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+color: rgb(154, 154, 241);
+font-size: 2.5em;
+font-weight: 600;
+cursor: default;
+}
+.main h3{
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 700;
+letter-spacing: 1px;
+margin-top: 10px;
+margin-bottom: 30px;
+cursor: default;
+}
+.main-btn{
+    color: aliceblue;
+    background-color:rgb(79, 79, 187);
+    text-decoration: none;
+    font-size: 1.1;
+    font-weight: 600;
+    display: inline-block;
+    padding:0.9375em 2.1875em ;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    transition: 0.35s ease;
+}
+.main-btn:hover{
+    background-color: rgb(49, 49, 126);
+    transform: scale(1.1);
+}
+.social a{
+    color: aliceblue;
+     font-size: 1.7em;
+     padding-right: 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:hover {
+    color: #7ea7fe;
+    transform: scale(1.2);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(63, 63, 177);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: aliceblue;
+    cursor: default;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/25%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.35s ease;
+}
+.card:hover{
+    transform: scale(1.1); 
+}
+.icon{
+    color: rgb(63, 63, 177);
+    font-size: 4em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: rgb(63, 63, 177);
+   font-size:1.2em ;
+   font-weight: 700;
+   margin: 10px;
+}
+.projects {
+    background-color: #1a2a57;
+    border-radius: 15px;
+    margin: 8px 4px 5px 5px;
+}
+.project-t{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+.projects .content{
+    margin-top: 30px; 
+}
+.project-card{
+    background-color: antiquewhite;
+    border: 4px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 20px 18px 18px;
+    transition: 0.3s ease;
+}
+.project-card:hover{
+    transform: scale(1.075);
+}
+.project-card:hover .project-image{
+    opacity: 0.8;
+}
+.project-image img{
+ width: 100%;
+
+}
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.8 em;
+    color: rgb(46, 15, 137);
+}
+.project-title{ 
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: rgb(84, 84, 225);
+}
+.more-details:hover{
+    
+    color: rgb(46, 46, 123);
+}
+.cards-contact .icon{
+    font-size: 4.5em;
+
+}
+.cards-contact .info h3{
+    color: black;
+}
+.cards-contact .info p{
+    font-size: 1em;
+}
+.cards-contact a{
+    color: rgb(67, 63, 177);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 30px;
+    display: inline-block;
+    transition: 0.35s ease;
+}
+.footer{
+    background-color: rgb(57, 57, 111);
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: default;
+}
+.footer-title span{
+    color: rgb(171, 188, 251);
+    cursor: default;
+}
+.footer .social a{
+  font-size: 1.4em;
+  padding: 0 15px 0 0;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        margin-left: 10px;
+        font-size: 1.0em;
+    }
+        .logo {
+           
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+              
+     
+    .title{
+        font-size: 1.8;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+        .project-t {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        
+    section{
+        padding: 50px 18px;
+    }
+   
+    .main h2{
+        font-size: 1.0em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .cards-contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-title {
+        font-size: 1.0em;
+    }
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .main{
+        background: url(img/1.1.png) no-repeat center;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .main h2{
+        font-size: 1.0em;
+    }
+    .main h3{
+        font-size: 1.4em;
+    }
+    .footer .social a{
+        font-size: 1em;
+        padding: 0 10px 0 0;
+      }
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
