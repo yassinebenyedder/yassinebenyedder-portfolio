@@ -256,16 +256,13 @@ cursor: default;
         padding: 12px 20px;
     }
     .navigation a{
-        margin-left: 10px;
+        margin-left: 8px;
         font-size: 1.0em;
     }
-        .logo {
-           
+    .logo {
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
-              
-     
     .title{
         font-size: 1.8;
         margin-bottom: 10px;
