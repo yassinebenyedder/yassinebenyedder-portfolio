@@ -10,16 +10,19 @@
 
 </head>
 <body>
-    <header data-aos="fade-down" data-aos-duration="650">
+    <header data-aos="fade-down" data-aos-duration="600">
 <a href="#" class="logo">Yassine</a>
-<nav class="navigation" data-aos="fade-down" data-aos-delay="650">
+<nav class="navigation" data-aos="fade-down" data-aos-delay="250">
 <a class="ggg" href="#about">About me</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
+<button class="theme-toggle" id="theme-toggle">
+    <i class="fas fa-moon"></i>
+</button>
 </nav>
     </header>
     <section class="main" >
-        <div data-aos="fade-right" data-aos-duration="650" data-aos-delay="350">
+        <div data-aos="fade-right" data-aos-duration="650" data-aos-delay="250">
             <h2 >Hello, I'm Yassine <br><span>Software Developer</span></h2>
             <h3>Business computing student</h3>
             <a href="#projects" class="main-btn">View My Work</a>
@@ -32,45 +35,169 @@
             </div>
         </div>
     </section>
-    <section id="about" data-aos="fade-up" data-aos-duration="650" data-aos-delay="100" >
-        <h2 class="title" data-aos="fade-up" >About me</h2>
-        <div class="content">
-         <div class="card" >
-            <div class="icon" data-aos="flip-right" data-aos-duration="650" data-aos-delay="200" ><i class="fa-solid fa-user"></i></div>
-            <div class="info">
-                <h3>Bio</h3>
-                <p>-I am a third-year Business Information Systems student at ESEN, passionate about web development, algorithms, and
-                problem-solving. I focus on technologies like React and Node.js, applying them in projects like Notini. Always eager to
-                learn, I seek opportunities to grow and tackle new challenges in software development.</p>
-            </div>
-         </div>
-         <div class="card" > 
-            <div class="icon" data-aos="flip-right" data-aos-duration="650" data-aos-delay="200" ><i class="fa-solid fa-graduation-cap"></i></div>
-            <div class="info">
-                <h3>Education</h3>
-                <p>- Bachelor’s in Business Information Systems :<br/>
-                Higher School of Digital Economy (ESEN) :
-                2022 - Present <br/>
-                -Baccalaureate in Economics and Management :<br />
-                Graduated in 2022</p>
-            </div>
-         </div>
-         <div class="card">
-            <div class="icon" data-aos="flip-right" data-aos-duration="650" data-aos-delay="200" ><i class="fa-solid fa-briefcase"></i></div>
-            <div class="info">
-                <h3>Exeperience</h3>
-                <p>CNSS | July 2023 <br>
-                Learned web development basics (HTML5 , CSS3). <br>
-                BNA | July 2024 <br>
-                Gained experience in account management and financial analysis. <br>
-                Magasin Général | August 2024 <br>
-                Assisted in stock and logistics management.
+    <section id="about" class="about-section" data-aos="fade-up" data-aos-duration="250" data-aos-delay="20">
+        <div class="about-container">
+            <h2 class="about-title" data-aos="fade-up">About Me</h2>
+            
+            <!-- Bio Section -->
+            <div class="about-bio" data-aos="fade-right" data-aos-duration="250" data-aos-delay="40">
+                <h3 class="section-heading">
+                    <i class="fa-solid fa-user section-icon"></i>
+                    Professional Summary
+                </h3>
+                <p class="bio-text">
+                    Graduate from ESEN in Business Computing, specialized in Business Information
+                    Systems. Gained hands-on experience through several academic projects and internships. Focused
+                    on building scalable, secure, and user-friendly solutions that solve real-world problems. Passionate about web development, algorithms, and
+                    problem-solving with expertise in React, Node.js, and full-stack development.
                 </p>
             </div>
-         </div>
+
+            <!-- Education Section -->
+            <div class="about-education" data-aos="fade-up" data-aos-duration="250" data-aos-delay="60">
+                <h3 class="section-heading">
+                    <i class="fa-solid fa-graduation-cap section-icon"></i>
+                    Education
+                </h3>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h4>Bachelor's Degree in Business Computing (BIS)</h4>
+                        <p class="institution">Higher School of Digital Economy (ESEN) Manouba</p>
+                        <p class="duration">2022 - 2025</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Baccalaureate in Economics and Management</h4>
+                        <p class="institution">Bab El Khadhra High School, Tunis</p>
+                        <p class="duration">2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills Section -->
+            <div class="about-skills" data-aos="fade-up" data-aos-duration="250" data-aos-delay="80">
+                <h3 class="section-heading">
+                    <i class="fa-solid fa-code section-icon"></i>
+                    Technical Skills
+                </h3>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Tailwind</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">.Net</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PL-SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">EDMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="about-experience" data-aos="fade-up" data-aos-duration="250" data-aos-delay="100">
+                <h3 class="section-heading">
+                    <i class="fa-solid fa-briefcase section-icon"></i>
+                    Experience
+                </h3>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h4>PFE Internship</h4>
+                            <p class="company">Caisse Nationale de Sécurité Sociale (CNSS)</p>
+                            <p class="duration">February - April 2025</p>
+                            <p class="description">
+                                PFE Internship: Automation of the file submission process, allowing clients to submit service requests online.<br>
+                                <strong>Tech Stack:</strong> React, Node.js (Express.js), Oracle Database, Paperless Ngx, Docker, Redis.<br><br>
+                                <strong>Key Achievements:</strong><br>
+                                • Created a dynamic form generator allowing non-developers to easily create and manage forms, similar to Google Forms.<br>
+                                • Implemented AI-based document recognition to automatically identify key identity documents (ID cards, birth certificates) in French and Arabic.<br>
+                                • Integrated with Paperless-ngx, an electronic document management system, for secure document archiving.<br>
+                                • Developed a comprehensive traceability system to monitor every action performed by CNSS employees on service requests, ensuring transparency and security.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h4>Summer Internship</h4>
+                            <p class="company">Mg Tunisia</p>
+                            <p class="duration">August 2024</p>
+                            <p class="description">
+                                Summer Internship, Business Operations & Customer Service<br><br>
+                                <strong>Key Achievements:</strong><br>
+                                • Took part in multiple roles, including cashier, stock management, floor assistant, and customer service, gaining a well rounded understanding of retail operations.<br>
+                                • Participated in customer service activities, improving communication skills and understanding customer needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h4>Summer Internship</h4>
+                            <p class="company">Banque Nationale Agricole (BNA)</p>
+                            <p class="duration">July 2024</p>
+                            <p class="description">
+                                Summer Internship: Client Relations & Banking Operations<br><br>
+                                <strong>Key Achievements:</strong><br>
+                                • Observed and supported day to day banking operations, including transactions, document verification, and customer onboarding.<br>
+                                • Built strong communication skills by interacting with clients and understanding their financial needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h4>Summer Internship</h4>
+                            <p class="company">Caisse Nationale de Sécurité Sociale (CNSS)</p>
+                            <p class="duration">July 2023</p>
+                            <p class="description">
+                                Summer Internship: Web Development Fundamentals<br><br>
+                                <strong>Key Achievements:</strong><br>
+                                • Learned web development basics including HTML, CSS, and JavaScript.<br>
+                                • First exposure to web development fundamentals and programming concepts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="projects" id="projects" data-aos="fade-right" data-aos-duration="650" > 
+    <section class="projects" id="projects" data-aos="fade-right" data-aos-duration="250" > 
         <h2 class="project-t">Projects</h2>
         <div class="content">
           <div class="project-card" >
@@ -108,47 +235,96 @@
       </strong>
     </div>
 </div>
+<div class="project-card">   
+    <div class="project-image">
+        <img src="img/cnss-project.png" alt="project image"/>
+    </div>
+    <div class="project-info">
+      <p class="project-category">CNSS File Submission Platform (React.js, Express.js, Oracle DB, Paperless)</p>
+      <strong class="project-title">
+        <span>CNSS Platform</span>
+      </strong>
+    </div>
+</div>
         </div>
     </section>
-<section class="cards-contact" id="contact" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+<section class="cards-contact" id="contact" data-aos="fade-left" data-aos-duration="250" data-aos-delay="30">
     <h2 class="title">Contact Me</h2>
 <div class="content">
   <div class="card">
             <div class="icon"><i class="fas fa-phone"></i></div>
             <div class="info">
-                <h3>phone</h3>
-                <p>(+216)92189355</p>
+                <h3>Phone</h3>
+                <p>(+216) 92 189 355</p>
+                <a href="tel:+21692189355" class="contact-link">Call Now</a>
             </div>
          </div>
          <div class="card">
-            <div class="icon"><i class="fas fa-envelope   "></i></div>
+            <div class="icon"><i class="fas fa-envelope"></i></div>
             <div class="info">
                 <h3>Email</h3>
                 <p>yassine.benyedder@esen.tn</p>
+                <a href="mailto:yassine.benyedder@esen.tn" class="contact-link">Send Email</a>
             </div>
          </div>
-         <div class="card" >
-            <div class="icon"><i class="fa-brands fa-linkedin" "></i></div>
+         <div class="card">
+            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
             <div class="info">
                 <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/yassin-ben-yedder" target="_blank">For my LinkedIn click here</a></p>
+                <p>Professional Network</p>
+                <a href="https://www.linkedin.com/in/yassin-ben-yedder" target="_blank" class="contact-link">Connect</a>
             </div>
          </div>
         </div>
 </section>
 
-<footer class="footer" >
- <p class="footer-title">Copyright @ <span>Yassine Ben yedder</span></p>
- <div class="social">
-    <a href="https://www.linkedin.com/in/yassin-ben-yedder" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
-    <a href="https://github.com/yassinebenyedder" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://x.com/Yassinbenyedde1" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a>
-    <a href="https://www.instagram.com/ben_yedder_yassin/profilecard/" target="_blank"><i class="fa-brands fa-instagram" target="_blank" ></i></a>
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-title">© 2025 <span>Yassine Ben yedder</span>. All rights reserved.</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/yassin-ben-yedder" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/yassinebenyedder" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/Yassinbenyedde1" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/ben_yedder_yassin/profilecard/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init();
+    
+    // Dark mode toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i');
+    
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', currentTheme);
+    
+    // Update icon based on current theme
+    if (currentTheme === 'dark') {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        
+        // Toggle icon
+        if (newTheme === 'dark') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    });
 </script>
 </body>
 </html>
