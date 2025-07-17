@@ -12,7 +12,7 @@
 <body>
     <header data-aos="fade-down" data-aos-duration="600">
 <a href="#" class="logo">Yassine</a>
-<nav class="navigation" data-aos="fade-down" data-aos-delay="250">
+<nav class="navigation" id="navigation" data-aos="fade-down" data-aos-delay="250">
 <a class="ggg" href="#about">About me</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
@@ -20,6 +20,16 @@
     <i class="fas fa-moon"></i>
 </button>
 </nav>
+<div class="header-right">
+    <button class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
     </header>
     <section class="main" >
         <div class="hero-container">
@@ -32,10 +42,10 @@
                 <a href="https://www.linkedin.com/in/yassin-ben-yedder" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
                 <a href="https://github.com/yassinebenyedder" target="_blank"><i class="fa-brands fa-github"  ></i></a>
                 <a href="https://x.com/Yassinbenyedde1" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a>
-                <a href="https://www.instagram.com/ben_yedder_yassin/profilecard/"" target="_blank"><i class="fa-brands fa-instagram"  ></i></a>
+                <a href="https://www.instagram.com/ben_yedder_yassin/profilecard/" target="_blank"><i class="fa-brands fa-instagram"  ></i></a>
                 </div>
             </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-duration="650" data-aos-delay="400">
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
                 <div class="image-card">
                     <img src="img/the one.jpeg" alt="Yassine Ben Yedder" class="profile-image">
                 </div>
@@ -302,35 +312,65 @@
     
     // Dark mode toggle functionality
     const themeToggle = document.getElementById('theme-toggle');
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
     const body = document.body;
     const icon = themeToggle.querySelector('i');
+    const mobileIcon = mobileThemeToggle.querySelector('i');
     
     // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     body.setAttribute('data-theme', currentTheme);
     
-    // Update icon based on current theme
+    // Update icons based on current theme
     if (currentTheme === 'dark') {
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
+        mobileIcon.classList.remove('fa-moon');
+        mobileIcon.classList.add('fa-sun');
     }
     
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', () => {
+    // Function to toggle theme
+    function toggleTheme() {
         const currentTheme = body.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
         body.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         
-        // Toggle icon
+        // Toggle icons for both buttons
         if (newTheme === 'dark') {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
+            mobileIcon.classList.remove('fa-moon');
+            mobileIcon.classList.add('fa-sun');
         } else {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
+            mobileIcon.classList.remove('fa-sun');
+            mobileIcon.classList.add('fa-moon');
         }
+    }
+    
+    // Add click listeners to both toggle buttons
+    themeToggle.addEventListener('click', toggleTheme);
+    mobileThemeToggle.addEventListener('click', toggleTheme);
+    
+    // Hamburger menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navigation = document.getElementById('navigation');
+    
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navigation.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on navigation links
+    const navLinks = document.querySelectorAll('.navigation a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navigation.classList.remove('active');
+        });
     });
 </script>
 </body>
